@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", loadEmployees);
 
 function loadEmployees() {
-    fetch("./api/employee_api.php")
+    fetch("../api/employee_api.php")
         .then(response => response.json())
         .then(data => {
             let employeeTableBody = document.getElementById("employeeTableBody");

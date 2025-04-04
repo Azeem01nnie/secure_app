@@ -3,6 +3,7 @@
     include '../api/database.php';
     include '../class/DbTest.php';
 
+
     $database = new Database();
     $conn = $database->getConnection();
 
@@ -34,7 +35,7 @@
     </div>
     <div class="status-container">
         Database Connection Status:
-        <span class="status <?= $connectionStatus['status'] === 'success' ? 'success' : 'error' ?>">
+        <span class="status <?= $connectionStatus['status'] === 'success' ? 'success' : 'error' ?>" style="color: green">
             <?= $connectionStatus['message'] ?>
         </span>
     </div>

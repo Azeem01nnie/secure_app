@@ -1,7 +1,7 @@
 <?php
     class Employee {
         private $conn;
-        private $table = "Employees";
+        private $table = "employees";
 
         public function __construct($db) {
             $this->conn = $db;
