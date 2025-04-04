@@ -13,7 +13,7 @@ function loadEmployees() {
                         <tr>
                             <td>${emp.id}</td>
                             <td>${emp.first_name}</td>
-                            <td>${emp.middle_name}</td>
+                            <td>${emp.middle_initial}</td>
                             <td>${emp.last_name}</td>
                             <td>${emp.mobile_number}</td>
                             <td>${emp.email}</td>
@@ -48,7 +48,7 @@ function addEmployee() {
         method: "POST",
         body: JSON.stringify({
             first_name: firstName,
-            middle_name: mi,
+            middle_initial: mi,
             last_name: lastName,
             email: email,
             mobile_number: mobile,
@@ -61,7 +61,7 @@ function addEmployee() {
     .then(data => {
         alert(data.message);
         document.getElementById("first_name").value = "";
-        document.getElementById("middle_name").value = "";
+        document.getElementById("middle_initial").value = "";
         document.getElementById("last_name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("mobile_number").value = "";
@@ -92,7 +92,7 @@ function updateEmployee() {
         body: JSON.stringify({
             id: id,
             first_name: firstName,
-            middle_name: mi,
+            middle_initial: mi,
             last_name: lastName,
             email: email,
             mobile_number: mobile,
