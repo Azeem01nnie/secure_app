@@ -20,7 +20,7 @@ function loadEmployees() {
                             <td>${emp.sex}</td>
                             <td>${emp.job_title}</td>
                             <td class="actions">
-                                <button class="edit-btn" onclick="openEditModal(${emp.id}, '${emp.first_name}', '${emp.middle_name}', '${emp.last_name}', '${emp.email}', '${emp.mobile_number}', '${emp.sex}', '${emp.job_title}')">Edit</button>
+                                <button class="edit-btn" onclick="openEditModal(${emp.id}, '${emp.first_name}', '${emp.middle_initial}', '${emp.last_name}', '${emp.email}', '${emp.mobile_number}', '${emp.sex}', '${emp.job_title}')">Edit</button>
                                 <button class="delete-btn" onclick="deleteEmployee(${emp.id})">Delete</button>
                             </td>
                         </tr>`;

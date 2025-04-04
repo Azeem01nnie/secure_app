@@ -1,4 +1,5 @@
 <?php
+
     include '../api/database.php';
     include '../class/DbTest.php';
 
@@ -9,6 +10,7 @@
     $connectionStatus = $test->checkConnection();
     
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
